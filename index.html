@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hard To Miss | Alternative Rock from Liverpool</title>
+
+    <meta name="description" content="Hard To Miss — guitar-driven alternative rock from Liverpool. Listen to the latest singles and find out more.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            background: #111111;
+            color: #eeeeee;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* HEADER */
+
+        header {
+            padding: 28px 0;
+            border-bottom: 1px solid #2b2b2b;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        nav a {
+            margin-left: 25px;
+            font-size: 13px;
+            letter-spacing: 1px;
+            color: #bbbbbb;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        /* HERO */
+
+        .hero {
+            text-align: center;
+            padding: 80px 0 90px;
+        }
+
+        .hero-image {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 35px;
+        }
+
+        .hero h1 {
+            margin: 0;
+            font-size: 48px;
+            letter-spacing: 7px;
+            text-transform: uppercase;
+        }
+
+        .hero .tagline {
+            margin-top: 15px;
+            color: #aaaaaa;
+            font-size: 17px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 12px 25px;
+            border: 1px solid #777777;
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .button:hover {
+            background: #eeeeee;
+            color: #111111;
+        }
+
+        /* SECTIONS */
+
+        section {
+            padding: 75px 0;
+            border-top: 1px solid #2b2b2b;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 13px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: #aaaaaa;
+            margin-bottom: 45px;
+        }
+
+        /* BIO */
+
+        .bio {
+            max-width: 720px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 18px;
+            color: #cccccc;
+        }
+
+        /* SINGLES */
+
+        .singles {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+        }
+
+        .single {
+            text-align: center;
+        }
+
+        .single img {
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 20px;
+            transition: opacity 0.2s ease;
+        }
+
+        .single:hover img {
+            opacity: 0.75;
+        }
+
+        .single h3 {
+            margin: 0;
+            font-size: 18px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .single p {
+            margin: 7px 0 0;
+            color: #999999;
+            font-size: 14px;
+        }
+
+        /* INFLUENCES */
+
+        .influences {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .influences p {
+            font-size: 21px;
+            line-height: 1.8;
+            color: #cccccc;
+        }
+
+        .influence-list {
+            margin-top: 25px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            color: #999999;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            color: #bbbbbb;
+        }
+
+        .email {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 20px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid #2b2b2b;
+            padding: 35px 0;
+            text-align: center;
+            color: #777777;
+            font-size: 13px;
+        }
+
+        .socials {
+            margin-bottom: 20px;
+        }
+
+        .socials a {
+            margin: 0 10px;
+            color: #aaaaaa;
+            font-size: 13px;
+        }
+
+        .socials a:hover {
+            color: #ffffff;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 650px) {
+
+            .nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero {
+                padding: 60px 0 70px;
+            }
+
+            .hero-image {
+                width: 180px;
+                height: 180px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+                letter-spacing: 5px;
+            }
+
+            .singles {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
+
+            .bio {
+                font-size: 16px;
+            }
+
+            .influences p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="container nav">
+
+        <a href="index.html" class="logo">HARD TO MISS</a>
+
+        <nav>
+            <a href="#about">ABOUT</a>
+            <a href="#music">MUSIC</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <!-- Replace with your artist photo -->
+        <img
+            src="images/artist.jpg"
+            alt="Hard To Miss"
+            class="hero-image"
+        >
+
+        <h1>Hard To Miss</h1>
+
+        <p class="tagline">
+            Alternative rock from Liverpool
+        </p>
+
+        <a href="#music" class="button">
+            Listen to the music
+        </a>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <div class="section-title">
+                About
+            </div>
+
+            <div class="bio">
+
+                <p>
+                    Hard To Miss is an alternative rock project from Liverpool,
+                    creating guitar-driven songs influenced by bands such as
+                    Buzzcocks, Queens of the Stone Age, The Kinks and Nirvana.
+                </p>
+
+                <p>
+                    The music combines driving guitars, melodic hooks and
+                    honest songwriting, with an emphasis on keeping things
+                    raw, direct and real.
+                </p>
+
+                <p>
+                    Hard To Miss is independently written, recorded and released,
+                    with new music continuing to follow throughout 2026.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MUSIC -->
+
+    <section id="music">
+
+        <div class="container">
+
+            <div class="section-title">
+                Singles
+            </div>
+
+            <div class="singles">
+
+
+                <!-- PICK UP THE PHONE -->
+
+                <a href="pick-up-the-phone-single/">
+
+                    <div class="single">
+
+                        <img
+                            src="images/pick-up-the-phone.jpg"
+                            alt="Pick Up The Phone artwork"
+                        >
+
+                        <h3>Pick Up The Phone</h3>
+
+                        <p>Single</p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- SPINNING -->
+
+                <a href="spinning-single/">
+
+                    <div class="single">
+
+                        <img
+                            src="images/spinning.jpg"
+                            alt="Spinning artwork"
+                        >
+
+                        <h3>Spinning</h3>
+
+                        <p>Single</p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- TRUTH -->
+
+                <a href="truth-single/">
+
+                    <div class="single">
+
+                        <img
+                            src="images/truth.jpg"
+                            alt="Truth artwork"
+                        >
+
+                        <h3>Truth</h3>
+
+                        <p>Single · 2026</p>
+
+                    </div>
+
+                </a>
+
+
+                <!-- FOURTH SINGLE -->
+
+                <a href="fourth-single/">
+
+                    <div class="single">
+
+                        <img
+                            src="images/fourth-single.jpg"
+                            alt="Fourth single artwork"
+                        >
+
+                        <h3>Fourth Single</h3>
+
+                        <p>Coming soon</p>
+
+                    </div>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- INFLUENCES -->
+
+    <section>
+
+        <div class="container">
+
+            <div class="section-title">
+                The Sound
+            </div>
+
+            <div class="influences">
+
+                <p>
+                    Guitar-driven alternative rock with melodic hooks,
+                    big guitars and a touch of grunge.
+                </p>
+
+                <div class="influence-list">
+                    BUZZCOCKS · NIRVANA · QOTSA · THE KINKS · PIXIES · OASIS
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section id="contact">
+
+        <div class="container contact">
+
+            <div class="section-title">
+                Contact
+            </div>
+
+            <p>
+                For radio, press, playlisting, collaborations or general enquiries:
+            </p>
+
+            <!-- Replace with your email address -->
+            <a
+                href="mailto:YOUR-EMAIL@EXAMPLE.COM"
+                class="email"
+            >
+                YOUR-EMAIL@EXAMPLE.COM
+            </a>
+
+            <br>
+
+            <a href="contact/" class="button">
+                Mailing list
+            </a>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer>
+
+    <div class="container">
+
+        <div class="socials">
+
+            <!-- Replace these with your actual links -->
+
+            <a href="https://www.instagram.com/hardtomiss.official/" target="_blank">
+                Instagram
+            </a>
+
+            <a href="https://www.tiktok.com/@hardtomiss" target="_blank">
+                TikTok
+            </a>
+
+            <a href="https://www.youtube.com/@HardToMiss" target="_blank">
+                YouTube
+            </a>
+
+        </div>
+
+        © 2026 Hard To Miss
+
+    </div>
+
+</footer>
+
+</body>
+</html>
